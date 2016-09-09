@@ -85,9 +85,9 @@ class SlackInviter {
 		// Get our language depending on where plugin is installed
 		// Name language file as "[text_domain]-[value in wp-config].mo"
 		if ( self::$where == 'plugins' ) {
-			load_plugin_textdomain( self::$td, false, self::$dir . '/invitations-for-slack/lang/' );
+			load_plugin_textdomain( self::$td, false, dirname( plugin_basename( __FILE__ )) . '/invitations-for-slack/lang' );
 		} elseif ( self::$where == 'mu-plugins' ) {
-			load_muplugin_textdomain( self::$td, '/invitations-for-slack/lang/' );
+			load_muplugin_textdomain( self::$td, '/invitations-for-slack/lang' );
 		}
 
 		// Create activation/deactivation hooks
