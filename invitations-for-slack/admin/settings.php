@@ -137,7 +137,7 @@ class SlackInviter_Admin_Settings {
 						<?php $title = __( 'Shortcodes', 'invitations-for-slack' ); ?>
 						<th scope="row"><?php echo esc_html( $title ); ?></th>
 						<td>
-							<p class="description"><?php esc_html_e( 'The following shortcodes are required to create the the Slack invitation forms. Use them on your invitation page(s).', 'invitations-for-slack' ); ?></p>
+							<p class="description"><?php esc_html_e( 'The following shortcodes are required to create the Slack invitation forms. Use them on your invitation page(s).', 'invitations-for-slack' ); ?></p>
 							<dl>
 								<dt><code>[invitations_for_slack]</code></dt>
 								<dd><?php esc_html_e( 'The primary code to allow users to sign up', 'invitations-for-slack' ); ?></dd>
