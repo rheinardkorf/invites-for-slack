@@ -212,7 +212,7 @@ class SlackInviter_Core_Functions {
 			$content .= '             <div class="team-stats">' . sprintf( __( '<strong class="online">%s</strong> users online. <strong class="registered">%s</strong> registered.', 'invitations-for-slack' ), '[STATS_ONLINE]', '[STATS_TOTAL]' ) . '</div>';
 
 			if ( $data['allow_different_email'] ) {
-				$content .= '             <input type="text" placeholder="you@email.com" />';
+				$content .= '             <input type="text" placeholder="' . __( 'you@email.com', 'invitations-for-slack' ) . '" />';
 			} else {
 				$content .= '             <input type="hidden" value="[USER_EMAIL]" />';
 			}
