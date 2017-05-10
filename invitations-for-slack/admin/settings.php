@@ -110,7 +110,7 @@ class SlackInviter_Admin_Settings {
 
 					<!-- WEB API SETTINGS -->
 					<?php
-					$channels = SlackInviter::get_setting( 'channels', '' );
+					$channels = SlackInviter::get_setting( 'channels', array() );
 					$channels = implode( "\n", $channels );
 					?>
 					<tr>
